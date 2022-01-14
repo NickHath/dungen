@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-        <input type="text" value={ text } onChange={e => setText(e.target.value)}/>
+        <textarea type="text" value={ text } onChange={e => setText(e.target.value)}/>
         <button onClick={() => fetchGeneration()}>Submit</button>
         <p>{ generation }</p>
     </div>
