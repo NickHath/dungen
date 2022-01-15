@@ -7,7 +7,7 @@ function ContextSelector({setContext}) {
     "The Temple of Elemental Evil campaign is..."
   ];
 
-  const contextsJSX = contexts.map((context, index) => <div className="context" key={index} onClick={e => setContext(e.target.innerText)}>{ context }</div>)
+  const contextsJSX = contexts.map((context, index) => <div className="context" key={index} tabindex={index} onClick={e => setContext(e.target.innerText)}>{ context }</div>)
 
   return (
     <div className="context-selector">
