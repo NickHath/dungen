@@ -1,29 +1,20 @@
-import { useState, useEffect } from "react";
-import logo from "./logo.svg";
+import { useState } from "react";
 import "./App.css";
+import NavBar from './components/NavBar';
+import ContextSelector from './components/ContextSelector';
+import Editor from './components/Editor';
 
 function App() {
-  const [text, setText] = useState("");
-  const [generation, setGeneration] = useState("")
-
-  function fetchGeneration() {
-    fetch("/api/generate", {
-      method: "POST",
-      body: JSON.stringify({ text }),
-      headers: {
-        "accepts": "application/json",
-        "Content-Type": "application/json"
-      }
-    })
-      .then(res => res.json())
-      .then(data => setGeneration(data.generation))
-  }
+  const [context, setContext] = useState("");
 
   return (
-    <div className="App">
-        <textarea type="text" value={ text } onChange={e => setText(e.target.value)}/>
-        <button onClick={() => fetchGeneration()}>Submit</button>
-        <p>{ generation }</p>
+    <div className="app">
+      <NavBar />
+      <div className="context-editor-wrapper">
+        <ContextSelector setContext={setContext} />
+        <Editor context={context} setContext={setContext} />
+      </div>
+
     </div>
   );
 }

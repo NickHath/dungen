@@ -16,7 +16,7 @@ app.get('/api', (req, res) => {
 app.post('/api/generate', (req, res) => {
   // expand body parameters
   const body = {
-    prompt: req.body.text,
+    prompt: req.body.context,
     max_tokens: 15
   };
 
