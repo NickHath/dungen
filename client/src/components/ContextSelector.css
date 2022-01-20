@@ -9,12 +9,36 @@
 }
 
 .context {
-  padding: 2.5em 0 2.5em 1em;
+  padding: 2em 0 2em 1em;
   margin: 0 0 2.5em 2.5em;
-  border: 2.5px solid black;
+  /* border: 2.5px solid black; */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
   border-radius: 3px;
+  display: flex;
+  flex-direction: column;
 }
 
-.context:focus {
-  border-color: #218380;
+.context:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.context h1 {
+  font-weight: 600;
+  font-size: 1.25em;
+  padding-bottom: 1em;
+}
+
+.context p {
+  padding-bottom: 1em;
+}
+
+.context button {
+  background-color: #734920;
+  width: 7em;
+  height: 3.5em;
+  color: white;
+  font-weight: 600;
+  align-self: flex-end;
+  margin: 0 2em 0 2em;
 }
