@@ -15,15 +15,15 @@ declare module 'slate' {
   }
 }
 
-const initialValue = [
-  {
-    type: 'paragraph',
-    children: [{ text: 'A line of text in a paragraph.' }],
-  },
-]
-
-export default function TextEditor() {
+export default function TextEditor({ prompt }) {
   const [editor] = useState(() => withReact(createEditor()))
+
+  const initialValue = [
+    { 
+      type: 'paragraph' ,
+      children: [{ text: 'Select a prompt above...' }]
+    }
+  ]
   
   return (
   <Slate editor={editor} value={initialValue}>
