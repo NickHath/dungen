@@ -1,0 +1,17 @@
+.navBar {
+  width: 100%;
+  background-color: hsl(30, 56%, 29%);
+  color: white;
+  height: 3.5rem;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.navBarItems {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-gap: 20px;
+}
+
+.swordAndShield {
+  filter: invert(99%) sepia(52%) saturate(215%) hue-rotate(206deg) brightness(115%) contrast(100%);
+}

@@ -1,4 +1,4 @@
-import PromptSelector from '../../components/prompt-selector';
+import PromptSelector from '../../components/prompt-selector'
 import TextEditor from '../../components/text-editor'
 
 export default function Editor() {
@@ -7,5 +7,5 @@ export default function Editor() {
       <PromptSelector />
       <TextEditor />
     </div>
-  );
+  )
 }

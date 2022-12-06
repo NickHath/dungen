@@ -29,5 +29,5 @@ export default function TextEditor() {
   <Slate editor={editor} value={initialValue}>
     <Editable />
   </Slate>
-  );
+  )
 }
