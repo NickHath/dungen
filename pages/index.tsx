@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        Landing Page
+        <h1>Landing Page</h1>
         <Link href="/editor">
           Editor
         </Link>

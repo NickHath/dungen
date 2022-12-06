@@ -1,33 +1,11 @@
-import React, { useState } from 'react'
-import { createEditor } from 'slate'
-import { Slate, Editable, withReact } from 'slate-react'
-import { BaseEditor, Descendant } from 'slate'
-import { ReactEditor } from 'slate-react'
-
-type CustomElement = { type: 'paragraph'; children: CustomText[] }
-type CustomText = { text: string }
-
-declare module 'slate' {
-  interface CustomTypes {
-    Editor: BaseEditor & ReactEditor
-    Element: CustomElement
-    Text: CustomText
-  }
-}
-
-const initialValue = [
-  {
-    type: 'paragraph',
-    children: [{ text: 'Test.' }],
-  },
-]
+import PromptSelector from '../../components/prompt-selector';
+import TextEditor from '../../components/text-editor'
 
 export default function Editor() {
-  const [editor] = useState(() => withReact(createEditor()))
-  
   return (
-  <Slate editor={editor} value={initialValue}>
-    <Editable />
-  </Slate>
+    <div>
+      <PromptSelector />
+      <TextEditor />
+    </div>
   );
 }
