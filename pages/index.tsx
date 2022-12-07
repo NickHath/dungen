@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1>Informative Landing Page -> Lay out process and explain how to come up with setting, then how it will generate session ideas for you</h1>
+        <h1>Informative Landing Page to lay out process and explain how to come up with setting, then how it will generate session ideas for you</h1>
         <Link href="/editor">
           Editor
         </Link>
