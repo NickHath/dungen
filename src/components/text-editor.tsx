@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useQuill } from 'react-quilljs'
-import styles from '../styles/TextEditor.module.css'
+import styles from '../../styles/TextEditor.module.css'
 import 'quill/dist/quill.snow.css'
 
 export default function TextEditor({ prompt }) {

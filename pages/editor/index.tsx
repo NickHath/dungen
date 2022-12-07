@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import PromptSelector from '../../components/prompt-selector'
-import TextEditor from '../../components/text-editor'
-import Submit from '../../components/submit'
+import PromptSelector from '../../src/components/prompt-selector'
+import TextEditor from '../../src/components/text-editor'
+import Submit from '../../src/components/submit'
 
 export default function Editor() {
   const [selectedPrompt, setSelectedPrompt] = useState('')

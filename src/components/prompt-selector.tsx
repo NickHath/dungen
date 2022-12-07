@@ -1,5 +1,5 @@
-import styles from '../styles/PromptSelector.module.css'
-import Card from '../components/card'
+import styles from '../../styles/PromptSelector.module.css'
+import Card from './card'
 
 const testPrompts = [
   {
