@@ -6,8 +6,7 @@ export default function NavBar() {
   return (
     <nav className={styles.navBar}>
       <ul className={styles.navBarItems}>
-        <li>
-          <div>Dungen</div>
+        <li className={styles.logo}>
           <Image
             className={styles.swordAndShield}
             src='/../public/sword-and-shield.png'
@@ -15,10 +14,17 @@ export default function NavBar() {
             width={48}
             height={48}
           />
+          <div>Dungen</div>
         </li>
-        <Link href="/"><li>Home</li></Link>
-        <Link href="/editor"><li>Idea Generator</li></Link>
-        <Link href="/about"><li>About</li></Link>
+        <li>
+          <Link href="/">Home</Link>
+        </li>
+        <li>
+          <Link href="/editor">Idea Generator</Link>
+        </li>
+        <li>
+          <Link href="/about">About</Link>
+        </li>
       </ul>
     </nav>
   )

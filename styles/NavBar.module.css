@@ -2,16 +2,26 @@
   width: 100%;
   background-color: hsl(30, 56%, 29%);
   color: white;
-  height: 3.5rem;
   box-shadow: 0px 1px 10px #999;
+  padding: 1rem 2rem;
+  font-weight: 500;
 }
 
 .navBarItems {
-  display: grid;
-  grid-template-columns: repeat(4, 200px);
+  display: flex;
+  align-items: center;
   grid-gap: 20px;
 }
 
 .swordAndShield {
   filter: invert(99%) sepia(52%) saturate(215%) hue-rotate(206deg) brightness(115%) contrast(100%);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo div {
+  margin-left: 1rem;
 }

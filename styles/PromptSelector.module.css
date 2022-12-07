@@ -1,3 +1,7 @@
+.promptSelector {
+  padding-top: 2rem;
+}
+
 .promptWrapper {
   overflow: auto;
   display: flex;
@@ -5,6 +9,10 @@
   overflow-y: scroll;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.title {
+  margin-left: 2rem;
 }
 
 .prompt {
