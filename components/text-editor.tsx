@@ -4,6 +4,7 @@ import styles from '../styles/TextEditor.module.css'
 import 'quill/dist/quill.snow.css'
 
 export default function TextEditor({ prompt }) {
+  // save prompt to local storage
   const { quill, quillRef } = useQuill()
 
   useEffect(() => {
