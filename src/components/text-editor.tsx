@@ -5,13 +5,19 @@ import 'quill/dist/quill.snow.css'
 import PromptContext from '../prompt-context'
 
 export default function TextEditor() {
-  const { prompt } = useContext(PromptContext)
+  const { prompt, setPrompt } = useContext(PromptContext)
+  console.log(prompt)
   // save prompt to local storage
   const { quill, quillRef } = useQuill()
 
+  // FIX THIS RE-RENDERING LOGIC, IT'S DUPLCIATING
   useEffect(() => {
     if (quill) {
       quill.setText(prompt)
+      quill.on('text-change', (e) => {
+        const text = quill.getText();
+        setPrompt(text)
+      });
     }
   }, [prompt])
 

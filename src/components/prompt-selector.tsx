@@ -82,6 +82,7 @@ const testPrompts = [
 export default function PromptSelector() {
   const promptsJSX = testPrompts.map((prompt, index) => (
     <Card 
+      key={index}
       title={prompt.title} 
       description={prompt.description} 
       promptText={prompt.promptText}
