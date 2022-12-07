@@ -1,0 +1,10 @@
+.quillEditor {
+  width: 65%;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.title {
+  margin-left: 3.25rem;
+  margin-bottom: 3rem;
+}

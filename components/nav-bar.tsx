@@ -20,11 +20,12 @@ export default function NavBar() {
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/editor">Idea Generator</Link>
-        </li>
-        <li>
           <Link href="/about">About</Link>
         </li>
+        <li>
+          <Link href="/editor">Session Generator</Link>
+        </li>
+
       </ul>
     </nav>
   )

@@ -1,11 +1,10 @@
 import { useEffect } from 'react'
 import { useQuill } from 'react-quilljs'
-import 'quill/dist/quill.snow.css' // Add css for snow theme
+import styles from '../styles/TextEditor.module.css'
+import 'quill/dist/quill.snow.css'
 
 export default function TextEditor({ prompt }) {
   const { quill, quillRef } = useQuill()
-  console.log(quill)    // undefined > Quill Object
-  console.log(quillRef) // { current: undefined } > { current: Quill Editor Reference }
 
   useEffect(() => {
     if (quill) {
@@ -14,8 +13,12 @@ export default function TextEditor({ prompt }) {
   }, [prompt])
 
   return (
-    <div style={{ width: 500, height: 300 }}>
-      <div ref={quillRef} />
+    <div>
+      <h1 className={styles.title}>Edit it or add your own</h1>
+      <div className={styles.quillEditor}>
+        <div ref={quillRef} />
+      </div>
     </div>
+
   )
 }

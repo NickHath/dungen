@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import PromptSelector from '../../components/prompt-selector'
 import TextEditor from '../../components/text-editor'
+import Submit from '../../components/submit'
 
 export default function Editor() {
   const [selectedPrompt, setSelectedPrompt] = useState('')
@@ -15,6 +16,7 @@ export default function Editor() {
     <div>
       <PromptSelector handlePromptClick={handlePromptClick} />
       <TextEditor prompt={selectedPrompt} />
+      <Submit />
     </div>
   )
 }

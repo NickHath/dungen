@@ -92,7 +92,7 @@ export default function PromptSelector({ handlePromptClick }) {
   
   return (
     <div className={styles.promptSelector}>
-      <h1 className={styles.title}>Select a prompt</h1>
+      <h1 className={styles.title}>Select a setting</h1>
       <div className={styles.promptWrapper}>
         { promptsJSX }
       </div>
