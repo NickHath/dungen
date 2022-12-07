@@ -14,7 +14,7 @@ export default function Sesions() {
       .catch(err => console.error(err))
   }, [])
 
-  const sessionsJSX = sessions.map(session => <div>{session}</div>)
+  const sessionsJSX = sessions.map((session, index) => <div key={index}>{session}</div>)
 
   return (
     <div className={styles.sessions}>

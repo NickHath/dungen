@@ -10,9 +10,10 @@ export default async function handler(
 ) {
   // rate limiting, error handling, auth
   // cheaper model?
-  const { prompt } = req.body
+  // pull prompt from a param, not entire body
+  const prompt = req.body
   const promptWithScaffolding = `
-    The Curse of Strahd is a Dungeons and Dragons campaign with this setting:
+    This is Dungeons and Dragons campaign with this setting:
 
     ${prompt}
 
