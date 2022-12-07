@@ -79,13 +79,12 @@ const testPrompts = [
   }
 ]
 
-export default function PromptSelector({ handlePromptClick }) {
+export default function PromptSelector() {
   const promptsJSX = testPrompts.map((prompt, index) => (
     <Card 
       title={prompt.title} 
       description={prompt.description} 
       promptText={prompt.promptText}
-      handlePromptClick={handlePromptClick}
     />
   ))
 

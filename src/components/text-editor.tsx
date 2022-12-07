@@ -1,9 +1,11 @@
-import { useEffect } from 'react'
+import { useEffect, useContext } from 'react'
 import { useQuill } from 'react-quilljs'
 import styles from '../../styles/TextEditor.module.css'
 import 'quill/dist/quill.snow.css'
+import PromptContext from '../prompt-context'
 
-export default function TextEditor({ prompt }) {
+export default function TextEditor() {
+  const { prompt } = useContext(PromptContext)
   // save prompt to local storage
   const { quill, quillRef } = useQuill()
 
