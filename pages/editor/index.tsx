@@ -10,8 +10,10 @@ export default function Editor() {
     setSelectedPrompt(newPrompt);
   }
 
-  console.log(selectedPrompt);
-  
+  const handleSubmit = function() {
+    console.log(response);
+  }
+
   return (
     <div>
       <PromptSelector handlePromptClick={handlePromptClick} />

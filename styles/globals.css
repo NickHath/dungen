@@ -17,3 +17,11 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+button {
+  color: white;
+  font-weight: 600;
+  background-color: hsl(30, 56%, 29%);
+  border: none;
+  padding: 1rem;
+}
