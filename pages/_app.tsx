@@ -5,7 +5,7 @@ import NavBar from '../components/nav-bar'
 import { Poppins } from '@next/font/google'
 
 const poppins = Poppins({
-  weight: ['200', '400', '500'],
+  weight: ['200', '400', '500', '600'],
   style: ['normal', 'italic'],
   subsets: ['latin']
 })

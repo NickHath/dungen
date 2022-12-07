@@ -84,7 +84,8 @@ export default function PromptSelector({ handlePromptClick }) {
     <Card 
       title={prompt.title} 
       description={prompt.description} 
-      // onClick={handlePromptClick}
+      promptText={prompt.promptText}
+      handlePromptClick={handlePromptClick}
     />
   ))
 

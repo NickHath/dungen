@@ -1,33 +1,21 @@
-import { useState } from 'react'
-import { createEditor } from 'slate'
-import { Slate, Editable, withReact } from 'slate-react'
-import { BaseEditor, Descendant } from 'slate'
-import { ReactEditor } from 'slate-react'
-
-type CustomElement = { type: 'paragraph'; children: CustomText[] }
-type CustomText = { text: string }
-
-declare module 'slate' {
-  interface CustomTypes {
-    Editor: BaseEditor & ReactEditor
-    Element: CustomElement
-    Text: CustomText
-  }
-}
+import { useEffect } from 'react'
+import { useQuill } from 'react-quilljs'
+import 'quill/dist/quill.snow.css' // Add css for snow theme
 
 export default function TextEditor({ prompt }) {
-  const [editor] = useState(() => withReact(createEditor()))
+  const { quill, quillRef } = useQuill()
+  console.log(quill)    // undefined > Quill Object
+  console.log(quillRef) // { current: undefined } > { current: Quill Editor Reference }
 
-  const initialValue = [
-    { 
-      type: 'paragraph' ,
-      children: [{ text: 'Select a prompt above...' }]
+  useEffect(() => {
+    if (quill) {
+      quill.setText(prompt)
     }
-  ]
-  
+  }, [prompt])
+
   return (
-  <Slate editor={editor} value={initialValue}>
-    <Editable />
-  </Slate>
+    <div style={{ width: 500, height: 300 }}>
+      <div ref={quillRef} />
+    </div>
   )
 }

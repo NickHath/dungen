@@ -9,6 +9,8 @@ export default function Editor() {
     setSelectedPrompt(newPrompt);
   }
 
+  console.log(selectedPrompt);
+  
   return (
     <div>
       <PromptSelector handlePromptClick={handlePromptClick} />
