@@ -1,0 +1,8 @@
+.sessions {
+  display: flex;
+  align-items: center;
+}
+
+.loader {
+  margin: 20% auto;
+}

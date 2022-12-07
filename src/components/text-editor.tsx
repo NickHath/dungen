@@ -6,7 +6,6 @@ import PromptContext from '../prompt-context'
 
 export default function TextEditor() {
   const { prompt, setPrompt } = useContext(PromptContext)
-  console.log(prompt)
   // save prompt to local storage
   const { quill, quillRef } = useQuill()
 

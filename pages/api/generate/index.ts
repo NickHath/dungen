@@ -8,6 +8,8 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
+  // rate limiting, error handling, auth
+  // cheaper model?
   const { prompt } = req.body
   const promptWithScaffolding = `
     The Curse of Strahd is a Dungeons and Dragons campaign with this setting:
