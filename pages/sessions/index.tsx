@@ -24,7 +24,7 @@ export default function Sesions() {
             className={styles.loader}
             color='hsl(30, 56%, 29%)'
             height={15} 
-            width={600}
+            width={500}
           /> 
       }
     </div>
