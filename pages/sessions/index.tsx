@@ -15,7 +15,7 @@ export default function Sesions() {
   }, [])
 
   const sessionsJSX = sessions.map((session, index) => (
-    <div className={styles.drawer}>
+    <div className={styles.drawer} key={index}>
       <h1>{`Session #${index + 1}`}</h1>
       <p>{session}...</p>
     </div>
