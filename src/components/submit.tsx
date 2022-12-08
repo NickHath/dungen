@@ -5,7 +5,7 @@ export default function Submit() {
   return (
     <div className={styles.submit}>
       <Link href='/sessions'>
-        <button>Generate Session Ideas</button>
+        <button className={styles.submitButton}>Generate Session Ideas</button>
       </Link>
     </div>
   )

@@ -24,10 +24,13 @@ export default async function handler(
 
   const body = {
     prompt: promptWithScaffolding,
-    model: 'davinci',
-    max_tokens: 300,
+    // model: 'davinci',
+    model: 'text-davinci-003',
+    max_tokens: 350,
     temperature: 0.83,
-    n: 6
+    n: 5,
+    frequency_penalty: 0,
+    presence_penalty: 0
   }
 
   const url = 'https://api.openai.com/v1/completions'
