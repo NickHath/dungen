@@ -13,7 +13,7 @@ export default function TextEditor() {
   useEffect(() => {
     if (quill) {
       quill.setText(prompt)
-      quill.on('text-change', (e) => {
+      quill.on('text-change', (e: any) => {
         const text = quill.getText();
         setPrompt(text)
       });

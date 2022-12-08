@@ -2,7 +2,7 @@ import styles from '../../styles/Card.module.css'
 import PromptContext from '../prompt-context'
 import { useContext } from 'react'
 
-export default function Card({ title, description, promptText }) {
+export default function Card({ title, description, promptText }: { title: string; description: string; promptText: string }) {
   const { setPrompt } = useContext(PromptContext)
   return (
     <div className={styles.card} onClick={() => setPrompt(promptText)}>
