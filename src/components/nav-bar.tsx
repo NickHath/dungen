@@ -10,7 +10,7 @@ export default function NavBar() {
           <Link href='/' className={styles.logo}>
             <Image
               className={styles.swordAndShield}
-              src='/../public/sword-and-shield.png'
+              src='/sword-and-shield.png'
               alt='Picture of a sword and shield'
               width={48}
               height={48}
