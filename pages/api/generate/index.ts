@@ -20,12 +20,14 @@ export default async function handler(
     Write the description for the beginning of the first session:
   `
 
+  console.log(promptWithScaffolding)
+
   const body = {
     prompt: promptWithScaffolding,
-    max_tokens: 50,
-    temperature: 0.9,
-    n: 3,
-    model: 'text-davinci-003'
+    model: 'davinci',
+    max_tokens: 300,
+    temperature: 0.83,
+    n: 6
   }
 
   const url = 'https://api.openai.com/v1/completions'
@@ -39,6 +41,7 @@ export default async function handler(
   }
 
   const response = await fetch(url, options)
+  console.log(response)
   const json = await response.json()
 
   const generationsJson = json.choices.map((generation: any) => generation.text)

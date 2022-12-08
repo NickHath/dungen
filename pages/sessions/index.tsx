@@ -5,7 +5,7 @@ import styles from '../../styles/Sessions.module.css'
 
 export default function Sesions() {
   const { prompt } = useContext(PromptContext)
-  const [sessions, setSessions] = useState([])
+  const [sessions, setSessions] = useState([] as string[])
 
   useEffect(() => {
     fetch('/api/generate', { method: 'POST', body: prompt })
@@ -14,7 +14,12 @@ export default function Sesions() {
       .catch(err => console.error(err))
   }, [])
 
-  const sessionsJSX = sessions.map((session, index) => <div key={index}>{session}</div>)
+  const sessionsJSX = sessions.map((session, index) => (
+    <div className={styles.drawer}>
+      <h1>{`Session #${index + 1}`}</h1>
+      <p>{session}...</p>
+    </div>
+  ))
 
   return (
     <div className={styles.sessions}>

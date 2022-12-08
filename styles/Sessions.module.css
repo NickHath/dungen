@@ -1,8 +1,20 @@
 .sessions {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  flex-direction: column;
+  padding-top: 5rem;
 }
 
 .loader {
   margin: 20% auto;
+}
+
+.drawer {
+  border-top: 12.5px solid hsl(30, 56%, 29%);
+  margin-bottom: 3.5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  flex: 1;
+  width: 60%;
+  padding: 2rem;
 }
