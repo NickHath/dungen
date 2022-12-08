@@ -7,7 +7,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.section}>
           <h1>AI-Powered D&D session ideas</h1>
-          <p>Using <a href='' target='_external'>Open AI's GPT-3</a>, Dungen generates Dungeons and Dragons session ideas using a setting description. Simply use a template or type in your D&D setting background, then you can generate a list of session ideas informed by that setitng.</p>
+          <p>Using <a href='https://openai.com/' target='_external'>Open AI's GPT-3</a>, Dungen generates Dungeons and Dragons session ideas using a setting description. Simply use a template or type in your D&D setting background, then you can generate a list of session ideas informed by that setitng.</p>
         </div>
         <div className={styles.section}>
           <h1>How it works</h1>

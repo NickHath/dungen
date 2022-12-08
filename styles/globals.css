@@ -16,7 +16,7 @@ h1 {
 
 a {
   text-decoration: none;
-  color: hsl(30, 56%, 29%);
+  color: inherit;
 }
 
 button {

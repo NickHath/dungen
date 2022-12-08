@@ -14,6 +14,10 @@
   font-weight: 700;
 }
 
+.main a {
+  color: hsl(30, 56%, 29%);
+}
+
 .footer {
 }
 
