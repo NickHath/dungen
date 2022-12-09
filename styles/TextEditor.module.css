@@ -8,3 +8,12 @@
   margin-left: 3.25rem;
   margin-bottom: 3rem;
 }
+
+@media (max-width: 480px){
+  .title {
+    margin-left: 1rem;
+  }
+  .quillEditor {
+    width: 95%;
+  }
+}

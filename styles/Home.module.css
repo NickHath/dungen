@@ -25,3 +25,9 @@
   margin-bottom: 2rem;
   width: 40%;
 }
+
+@media (max-width: 480px){
+  .section {
+    width: 80%;
+  }
+}
