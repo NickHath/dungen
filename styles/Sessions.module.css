@@ -11,10 +11,21 @@
 }
 
 .drawer {
+  display: flex;
+  flex-direction: column;
   border-top: 12.5px solid hsl(30, 56%, 29%);
   margin-bottom: 3.5rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   flex: 1;
   width: 60%;
   padding: 2rem;
+}
+
+.drawer p {
+  margin-bottom: 2rem;
+}
+
+.drawer button {
+  margin: right;
+  align-self: end;
 }
