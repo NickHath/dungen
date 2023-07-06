@@ -26,9 +26,9 @@ export default async function handler(
     prompt: promptWithScaffolding,
     // model: 'davinci',
     model: 'text-davinci-003',
-    max_tokens: 350,
+    max_tokens: 250,
     temperature: 0.83,
-    n: 5,
+    n: 4,
     frequency_penalty: 0,
     presence_penalty: 0
   }
